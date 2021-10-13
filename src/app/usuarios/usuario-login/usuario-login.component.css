@@ -1,0 +1,22 @@
+
+  #login .container #login-row #login-column #login-box {
+    
+    height: auto;
+    border: 1px solid #9C9C9C;
+    background-color: #EAEAEA;
+  }
+  #login .container #login-row #login-column #login-box #login-form {
+    padding: 20px;
+  }
+  #login .container #login-row #login-column #login-box #login-form #register-link {
+    margin-top: 30px;
+  }
+
+  #login{
+      margin-top: 5%;
+      margin-bottom: 5%;
+  }
+  .text-info{
+      margin-top: 10px;
+      margin-bottom: 5px;
+  }
