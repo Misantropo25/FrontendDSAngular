@@ -5,6 +5,8 @@ import { ServicioMantenimientoPlanesDescripcionComponent } from './servicio-mant
 import { ServicioCompraPlanesComponent } from './servicio-compra-planes/servicio-compra-planes.component';
 import { ServicioCompraPlanesEnvioDatosComponent } from './servicio-compra-planes-envio-datos/servicio-compra-planes-envio-datos.component';
 import { FormsModule } from '@angular/forms';
+import { UsuariosModule } from '../usuarios/usuarios.module';
+import { AppRoutingModule } from '../app-routing.module';
 
 
 @NgModule({
@@ -22,7 +24,9 @@ import { FormsModule } from '@angular/forms';
   ],
   imports: [
     CommonModule,
-    FormsModule
+    FormsModule,
+    UsuariosModule,
+    AppRoutingModule
   ]
 })
 export class ServiciosModule { }

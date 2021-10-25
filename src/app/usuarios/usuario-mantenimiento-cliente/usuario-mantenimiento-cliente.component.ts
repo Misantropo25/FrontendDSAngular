@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
+import { Empleado } from '../interfaces/empleado.interface';
 
 @Component({
   selector: 'app-usuario-mantenimiento-cliente',
@@ -11,5 +12,6 @@ export class UsuarioMantenimientoClienteComponent implements OnInit {
 
   ngOnInit(): void {
   }
-
+  
+  
 }

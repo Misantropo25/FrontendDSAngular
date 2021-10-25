@@ -14,6 +14,11 @@ import { UsuarioAyudaSoporteComponent } from './usuario-ayuda-soporte/usuario-ay
 import { UsuarioPlanesComponent } from './usuario-planes/usuario-planes.component';
 import { UsuarioNosotrosComponent } from './usuario-nosotros/usuario-nosotros.component';
 import { UsuarioContactoComponent } from './usuario-contacto/usuario-contacto.component';
+import { AppRoutingModule } from '../app-routing.module';
+import { UsuarioRegisterComponent } from './usuario-register/usuario-register.component';
+import { UsuarioClientePersonalComponent } from './usuario-cliente-personal/usuario-cliente-personal.component';
+import { UsuarioValidarLoginComponent } from './usuario-validar-login/usuario-validar-login.component';
+import { UsuarioClientePersonalModificarComponent } from './usuario-cliente-personal-modificar/usuario-cliente-personal-modificar.component';
 
 
 
@@ -30,7 +35,12 @@ import { UsuarioContactoComponent } from './usuario-contacto/usuario-contacto.co
     UsuarioAyudaSoporteComponent,
     UsuarioPlanesComponent,
     UsuarioNosotrosComponent,
-    UsuarioContactoComponent
+    UsuarioContactoComponent,
+    UsuarioRegisterComponent,
+    UsuarioClientePersonalComponent,
+    UsuarioValidarLoginComponent,
+    UsuarioClientePersonalModificarComponent
+    
   ],
   exports:[
     UsuarioInicioComponent,
@@ -44,11 +54,14 @@ import { UsuarioContactoComponent } from './usuario-contacto/usuario-contacto.co
     UsuarioAyudaSoporteComponent,
     UsuarioPlanesComponent,
     UsuarioNosotrosComponent,
-    UsuarioContactoComponent
+    UsuarioContactoComponent,
+    UsuarioRegisterComponent,
+    UsuarioClientePersonalComponent
   ],
   imports:[
     CommonModule,
-    FormsModule
+    FormsModule,
+    AppRoutingModule
   ]
 })
 

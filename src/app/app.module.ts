@@ -9,6 +9,7 @@ import { ContratosModule } from './contratos/contratos.module';
 import { RegistrosModule } from './registros/registros.module';
 import { TicketsModule } from './tickets/tickets.module';
 import { ServiciosModule } from './servicios/servicios.module';
+import { AppRoutingModule } from './app-routing.module';
 
 @NgModule({
   declarations: [
@@ -23,7 +24,8 @@ import { ServiciosModule } from './servicios/servicios.module';
     ContratosModule,
     RegistrosModule,
     TicketsModule,
-    ServiciosModule
+    ServiciosModule,
+    AppRoutingModule
   ],
   providers: [],
   bootstrap: [AppComponent]

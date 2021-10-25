@@ -7,111 +7,186 @@
              <br>
            <h2>Información</h2>
            <br>
-           <p><strong>Nombre Usuario</strong></p>        
-            <div class="col-sm-10">
-              <input type="text" readonly class="form-control-plaintext" id="statictext" value="FFFFFF">
-            </div> <br>
-            <P><strong>Contraseña</strong></P>
-            <div class="col-sm-10">
-              <input type="password" readonly class="form-control-plaintext" id="statictext" value="*********">
-            </div> <br>
-            <p><strong>Nombre</strong></p>
-            <div class="col-sm-10">
-              <input type="text" readonly class="form-control-plaintext" id="statictext" value="Carlos">
-            </div> <br>
-            <p><strong>Apellido Paterno</strong></p>
-            <div class="col-sm-10">
-              <input type="text" readonly class="form-control-plaintext" id="statictext" value="Quispe">
-            </div> <br>
-            <p><strong>Apellido Materno</strong></p>
-            <div class="col-sm-10">
-              <input type="text" readonly class="form-control-plaintext" id="statictext" value="Mamani">
-            </div> <br>
-            <p><strong>DNI</strong></p>
-            <div class="col-sm-10">
-              <input type="text" readonly class="form-control-plaintext" id="statictext" value="52596302">
-            </div> <br>
-            <p><strong>Sexo</strong></p>
-            <div class="col-sm-10">
-              <input type="text" readonly class="form-control-plaintext" id="statictext" value="Masculino">
-            </div> <br>
-            <p><strong>Numero de telefono</strong></p>
-            <div class="col-sm-10">
-              <input type="text" readonly class="form-control-plaintext" id="statictext" value="953279733">
-            </div> <br>
-            <p><strong>Email</strong></p>
-            <div class="col-sm-10">
-              <input type="email" readonly class="form-control-plaintext" id="statictext" value="Cquispe@gmail.com">
-            </div> <br>
-            <p><strong>Direccion</strong></p>
-            <div class="col-sm-10">
-              <input type="text" readonly class="form-control-plaintext" id="statictext" value="Su casa">
-            </div> <br>
-            <p><strong>Area</strong></p>
-            <div class="col-sm-10">
-              <input type="text" readonly class="form-control-plaintext" id="statictext" value="Cajero">
-            </div> <br>
-
-            
-           <br><br>
-          </div>
-          <div class="col">
-              <br><br><br><br><br><br>
-           <h2>Añadir nuevo empleado</h2>
-           <br>
-           <p>Nombre de Usuario</p>
-           <div class="mb-3">
-            <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Insertar Usuario">
-          </div>
-          <p>Contraseña</p>
-          <div class="mb-3">
-            <input type="password" class="form-control" id="exampleFormControlInput1" placeholder="Ingrese su contraseña">
-          </div>
-          <p>Nombre</p>
-          <div class="mb-3">
-            <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="...">
-          </div>
-          <p>Apellido Paterno</p>
-          <div class="mb-3">
-            <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="...">
-          </div>
-          <p>Apellido Materno</p>
-          <div class="mb-3">
-            <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="...">
-          </div>
-          <p>DNI</p>
-          <div class="mb-3">
-            <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="...">
-          </div>
-          <p>Sexo</p>
-            <input class="form-control" list="datalistOptions" id="exampleDataList" placeholder="Type to search...">
-            <datalist id="datalistOptions">
-                <option value="Masculino">
-                <option value="Femenino">
-            </datalist>
-            <br>
-          <p>Numero de telefono</p>
-          <div class="mb-3">
-            <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="...">
-          </div>
-          <p>Email</p>
-          <div class="mb-3">
-            <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
-          </div>
-          <p>Direccion</p>
-          <div class="mb-3">
-            <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="...">
-          </div>
-          <p>Area</p>
-          <div class="mb-3">
-            <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="...">
-          </div>
-          <div class="col-4 col-sm-4"><button type="button" class="btn btn-primary">Añadir</button></div>
-
-
-
-     
-           <br><br>
-          </div>
-        </div>
+    <div class="col">
+            <ul>
+        <li *ngFor="let empleado of empleados">
+              <h2>Usuarios</h2>
+              <p><strong>Nombre</strong></p>
+              <div class="col-sm-10">
+                <input type="text" readonly class="form-control-plaintext" id="statictext" value="{{empleado.Nombre}}">
+              </div> 
+              <P><strong>Contraseña</strong></P>
+              <div class="col-sm-10">
+                <input type="password" readonly class="form-control-plaintext" id="statictext" value="{{empleado.Contrasenia}}">
+              </div> 
+              <p><strong>Apellido Paterno</strong></p>
+              <div class="col-sm-10">
+                <input type="text" readonly class="form-control-plaintext" id="statictext" value="{{empleado.ApePaterno}}">
+              </div> 
+              <p><strong>Apellido Materno</strong></p>
+              <div class="col-sm-10">
+                <input type="text" readonly class="form-control-plaintext" id="statictext" value="{{empleado.ApeMaterno}}">
+              </div> 
+              <p><strong>DNI</strong></p>
+              <div class="col-sm-10">
+                <input type="text" readonly class="form-control-plaintext" id="statictext" value="{{empleado.DNI}}">
+              </div> 
+              <p><strong>Sexo</strong></p>
+              <div class="col-sm-10">
+                <input type="text" readonly class="form-control-plaintext" id="statictext" value="{{empleado.Sexo}}">
+              </div> 
+              <p><strong>Numero de telefono</strong></p>
+              <div class="col-sm-10">
+                <input type="text" readonly class="form-control-plaintext" id="statictext" value="{{empleado.NumTelefono}}">
+              </div> 
+              <p><strong>Email</strong></p>
+              <div class="col-sm-10">
+                <input type="email" readonly class="form-control-plaintext" id="statictext" value="{{empleado.Email}}">
+              </div> 
+              <p><strong>Direccion</strong></p>
+              <div class="col-sm-10">
+                <input type="text" readonly class="form-control-plaintext" id="statictext" value="{{empleado.Direccion}}">
+              </div> 
+              <p><strong>Area</strong></p>
+              <div class="col-sm-10">
+                <input type="text" readonly class="form-control-plaintext" id="statictext" value="{{empleado.Area}}">
+              </div>            
+        </li>
+    </ul> 
   </div>
+  <form (ngSubmit)="agregarNuevoEmpleado($event)" >
+    <div class="mb-3">
+        <label for="NomUsuario" class="form-label">Nombre Usuario</label>
+        <input 
+            type="text" 
+            class="form-control" 
+            placeholder="Nombre Usuario" 
+            id="NomUsuario"
+            name="empleado.NomUsuario"
+            [(ngModel)]="nuevoEmpleado.NomUsuario"
+        />
+    </div>
+    
+    <div class="mb-3">
+      <label for="productos" class="form-label">Contrasenia</label>
+      <input 
+          type="text" 
+          class="form-control" 
+          placeholder="Contraseña" 
+          id="productos"
+          name="empleado.Contrasenia"
+          [(ngModel)]="nuevoEmpleado.Contrasenia"
+      />
+  </div>
+  <div class="mb-3">
+    <label for="Nombre" class="form-label">Nombre</label>
+    <input 
+        type="text" 
+        class="form-control" 
+        placeholder="Nombre Nombre" 
+        id="Nombre"
+        name="empleado.Nombre"
+        [(ngModel)]="nuevoEmpleado.Nombre"
+    />
+   
+</div>
+<div class="mb-3">
+  <label for="ApePaterno" class="form-label">Apellido Paterno</label>
+  <input 
+      type="text" 
+      class="form-control" 
+      placeholder="Apellido Paterno" 
+      id="ApePaterno"
+      name="empleado.ApePaterno"
+      [(ngModel)]="nuevoEmpleado.ApePaterno"
+  />
+</div>
+
+<div class="mb-3">
+  <label for="ApeMaterno" class="form-label">Apellido Materno</label>
+  <input 
+      type="text" 
+      class="form-control" 
+      placeholder="Apellido Materno" 
+      id="ApeMaterno"
+      name="empleado.ApeMaterno"
+      [(ngModel)]="nuevoEmpleado.ApeMaterno"
+  />
+</div>
+
+<div class="mb-3">
+  <label for="DNI" class="form-label">DNI</label>
+  <input 
+      type="text" 
+      class="form-control" 
+      placeholder="DNI" 
+      id="DNI"
+      name="empleado.DNI"
+      [(ngModel)]="nuevoEmpleado.DNI"
+  />
+</div>
+
+<div class="mb-3">
+  <label for="Sexo" class="form-label">Sexo </label>
+  <input 
+      type="text" 
+      class="form-control" 
+      placeholder="Sexo (M o F)" 
+      id="Sexo"
+      name="empleado.Sexo"
+      [(ngModel)]="nuevoEmpleado.Sexo"
+  />
+</div>
+
+<div class="mb-3">
+  <label for="NumTelefono" class="form-label">Numero de Telefono </label>
+  <input 
+      type="text" 
+      class="form-control" 
+      placeholder="Numero de Telefono " 
+      id="NumTelefono"
+      name="empleado.NumTelefono"
+      [(ngModel)]="nuevoEmpleado.NumTelefono"
+  />
+</div>
+
+<div class="mb-3">
+  <label for="Email" class="form-label">Email </label>
+  <input 
+      type="text" 
+      class="form-control" 
+      placeholder="Email" 
+      id="Email"
+      name="empleado.Email"
+      [(ngModel)]="nuevoEmpleado.Email"
+  />
+</div>
+
+<div class="mb-3">
+  <label for="Direccion" class="form-label">Direccion </label>
+  <input 
+      type="text" 
+      class="form-control" 
+      placeholder="Direccion" 
+      id="Direccion"
+      name="empleado.Direccion"
+      [(ngModel)]="nuevoEmpleado.Direccion"
+  />
+</div>
+
+<div class="mb-3">
+  <label for="Area" class="form-label">Area </label>
+  <input 
+      type="text" 
+      class="form-control" 
+      placeholder="Area" 
+      id="Area"
+      name="empleado.Area"
+      [(ngModel)]="nuevoEmpleado.Area"
+  />
+</div>
+    <button type="submit" class="btn btn-primary">Agregar</button> 
+</form>
+<br>
+  </div>
+ 

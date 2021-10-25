@@ -1,4 +1,8 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit} from '@angular/core';
+import { Cliente } from '../interfaces/cliente.interface';
+
+
+
 
 @Component({
   selector: 'app-usuario-login',
@@ -7,9 +11,13 @@ import { Component, OnInit } from '@angular/core';
 })
 export class UsuarioLoginComponent implements OnInit {
 
-  constructor() { }
+  constructor(
+  ){  } 
 
   ngOnInit(): void {
+  }
+
+  login(): void{
   }
 
 }

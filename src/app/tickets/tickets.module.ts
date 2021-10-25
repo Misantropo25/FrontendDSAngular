@@ -4,6 +4,7 @@ import { FormsModule } from '@angular/forms';
 import { CommonModule } from '@angular/common';
 import { TicketMantenimientoComponent } from './ticket-mantenimiento/ticket-mantenimiento.component';
 import { TicketVisualizacionComponent } from './ticket-visualizacion/ticket-visualizacion.component';
+import { UsuariosModule } from '../usuarios/usuarios.module';
 
 
 
@@ -20,7 +21,8 @@ import { TicketVisualizacionComponent } from './ticket-visualizacion/ticket-visu
 
   imports: [
     CommonModule,
-    FormsModule
+    FormsModule,
+    UsuariosModule
   ]
 })
 export class TicketsModule { }

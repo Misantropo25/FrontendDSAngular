@@ -1,6 +1,6 @@
-export interface Empleado {
+export interface Cliente {
     NomUsuario: string,
-    Contrasenia: string,
+    Contraseña: string,
     Nombre: string,
     ApePaterno: string,
     ApeMaterno: string,
@@ -8,7 +8,6 @@ export interface Empleado {
     Sexo: string,
     NumTelefono: string,
     Email: string,
-    Direccion:  string,   
-    Area: String
-}
-
+    Direccion:  string,
+    CodContrato: string[]   
+  }
